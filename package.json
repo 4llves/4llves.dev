@@ -12,6 +12,7 @@
   "dependencies": {
     "@radix-ui/react-toast": "^1.0.0",
     "@react-email/html": "^0.0.1",
+    "@splinetool/react-spline": "^2.2.6",
     "@stitches/react": "^1.2.6",
     "date-fns": "^2.21.3",
     "framer-motion": "^6.2.3",

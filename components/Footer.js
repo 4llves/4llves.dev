@@ -3,29 +3,29 @@ import { styled } from '../stitches.config'
 
 export default function Footer() {
   const links = [
-    {
-      title: 'Email',
-      url: '/contact',
-      icon: 'ri-mail-line',
-    },
+    // {
+    //   title: 'Email',
+    //   url: '/contact',
+    //   icon: 'ri-mail-line',
+    // },
     {
       title: 'Twitter',
-      url: 'https://twitter.com/zenorocha',
+      url: 'https://twitter.com/4llves',
       icon: 'ri-twitter-line',
     },
     {
       title: 'GitHub',
-      url: 'https://github.com/zenorocha',
+      url: 'https://github.com/4llves',
       icon: 'ri-github-line',
     },
     {
       title: 'linkedin',
-      url: 'https://linkedin.com/in/zenorocha',
+      url: 'https://linkedin.com/in/4llves',
       icon: 'ri-linkedin-line',
     },
     {
       title: 'Instagram',
-      url: 'https://instagram.com/zenorocha',
+      url: 'https://instagram.com/4llves_',
       icon: 'ri-instagram-line',
     },
   ]
