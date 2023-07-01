@@ -1,23 +1,20 @@
-import { styled } from '../stitches.config'
-import React from 'react'
-import Head from 'next/head'
+import { format, intervalToDuration, parseISO } from 'date-fns'
+import Lottie from 'lottie-react'
 import Image from 'next/image'
-import { parseISO, format, intervalToDuration } from 'date-fns'
-import Base from '../layouts/Base'
+import React from 'react'
 import { ButtonPrimary } from '../components/ButtonPrimary'
 import Pronunciation from '../components/Pronunciation'
-import Toast from '../components/Toast'
-import stripHtml from '../lib/strip-html'
 import items from '../data/about'
-import Lottie from 'lottie-react'
+import Base from '../layouts/Base'
 import copyBioIcon from '../public/static/icons/copy-bio.json'
 import downloadIcon from '../public/static/icons/download.json'
+import { styled } from '../stitches.config'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'About // Zeno Rocha',
+    title: 'About // Alves Jhonata',
     description:
-      "Zeno Rocha is a Brazilian creator and programmer. He currently lives in San Francisco, California, where he's the Founder & CEO at Resend. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
+      "Sou Jhonata Alves, tenho 26 anos, moro em Goianésia do Pará. Comecei aos 13 anos na área de manutenção de computadores e suporte, e aos 22 iniciei minha caminhada na área da programação.",
     tagline: 'PAGINA EM CONSTRUÇÃO',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',

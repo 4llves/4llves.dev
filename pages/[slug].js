@@ -1,21 +1,21 @@
-import Head from 'next/head'
 import { ArticleJsonLd } from 'next-seo'
-import Blogpost from '../layouts/Blogpost'
+import Head from 'next/head'
 import ErrorMessage from '../components/ErrorMessage'
-import { getPostBySlug, getAllPosts, convertMarkdownToHtml } from '../lib/blog'
+import Blogpost from '../layouts/Blogpost'
+import { convertMarkdownToHtml, getAllPosts, getPostBySlug } from '../lib/blog'
 
 function Post(props) {
   if (props.errorCode) {
     return <ErrorMessage code={props.errorCode} />
   }
 
-  const title = `${props.title} // Zeno Rocha`
+  const title = `${props.title} // Alves Jhonata`
   const description = props.description || ''
-  const url = `https://zenorocha.com/${props.slug}`
+  const url = `https://4llves.dev/${props.slug}`
   const date = new Date(props.date).toISOString()
   const image = props.image
-    ? `https://zenorocha.com${props.image}`
-    : 'https://zenorocha.com/static/images/home-opt.jpg'
+    ? `https://4llves.dev${props.image}`
+    : 'https://4llves.dev/static/images/home-opt.jpg'
 
   return (
     <>
@@ -33,7 +33,7 @@ function Post(props) {
       </Head>
 
       <ArticleJsonLd
-        authorName="Zeno Rocha"
+        authorName="Alves Jhonata"
         type="Blog"
         url={url}
         title={title}
@@ -64,7 +64,7 @@ export async function getStaticProps({ params }) {
     const content = await convertMarkdownToHtml(post.content || '')
 
     const isProd = process.env.NODE_ENV === 'production'
-    const base = isProd ? 'https://zenorocha.com' : 'http://localhost:3000'
+    const base = isProd ? 'https://4llves.dev' : 'http://localhost:3000'
 
     if (isProd) {
       const viewsReq = await fetch(`${base}/api/views/${params.slug}`)
