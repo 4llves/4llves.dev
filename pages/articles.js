@@ -1,12 +1,12 @@
-import { styled } from '../stitches.config'
+import { AnimateSharedLayout } from 'framer-motion'
 import Head from 'next/head'
-import Base from '../layouts/Base'
-import stripHtml from '../lib/strip-html'
-import { getAllPosts, getPostBySlug } from '../lib/blog'
-import ListItem from '../components/ListItem'
 import FeaturedArticle from '../components/FeaturedArticle'
 import { ListGroup } from '../components/ListGroup'
-import { AnimateSharedLayout } from 'framer-motion'
+import ListItem from '../components/ListItem'
+import Base from '../layouts/Base'
+import { getAllPosts, getPostBySlug } from '../lib/blog'
+import stripHtml from '../lib/strip-html'
+import { styled } from '../stitches.config'
 
 export async function getStaticProps() {
   const allPosts = getAllPosts(['date', 'skip', 'slug', 'title'])
@@ -27,7 +27,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      title: 'Articles // Zeno Rocha',
+      title: 'Articles // Alves Jhonata',
       tagline: 'Stories. Updates. Guides.',
       image: '/static/images/articles-bw.jpg',
       primaryColor: 'yellow',

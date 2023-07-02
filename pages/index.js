@@ -1,10 +1,10 @@
-import { styled } from '../stitches.config'
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
+import { PostContainer, PostContent, PostMain } from '../components/Post'
 import ShortcutHome from '../components/ShortcutHome'
-import { PostMain, PostContent, PostContainer } from '../components/Post'
 import { Wrapper } from '../components/Wrapper'
+import { styled } from '../stitches.config'
 
 export async function getStaticProps() {
   return {
@@ -27,7 +27,7 @@ export default function Index(props) {
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
         <meta content="https://4llves.dev/" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content={`https://4llves.dev${image}`} property="og:image" />
       </Head>
 
       <Navbar />
@@ -38,7 +38,7 @@ export default function Index(props) {
               <div>
                 <h1>{title}</h1>
                 <p>
-                  <strong>Dev. Jr em transição de carreira{' '}
+                  <strong>Tenho 26 anos, moro em Goianésia do Pará. Comecei aos 13 anos na área de manutenção de computadores e suporte, e aos 22 iniciei minha caminhada na área da programação.{' '}
                   </strong><br />
                   {description}
                 </p>

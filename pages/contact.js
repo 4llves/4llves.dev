@@ -1,14 +1,14 @@
-import React from 'react'
 import Head from 'next/head'
+import React from 'react'
+import { Box } from '../components/Box'
+import Toast from '../components/Toast'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
-import Toast from '../components/Toast'
-import { Box } from '../components/Box'
 import { styled } from '../stitches.config'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Contact // Zeno Rocha',
+    title: 'Contact // Alves Jhonata',
     tagline: 'Email me. Like in the old days.',
     image: '/static/images/reminder-bw.jpg',
     primaryColor: 'cyan',
@@ -29,7 +29,7 @@ function Contact(props) {
 
     try {
       const isProd = process.env.NODE_ENV === 'production'
-      const base = isProd ? 'https://zenorocha.com' : 'http://localhost:3000'
+      const base = isProd ? 'https://4llves.dev' : 'http://localhost:3000'
 
       await fetch(`${base}/api/email`, {
         method: 'POST',
@@ -44,7 +44,7 @@ function Contact(props) {
       setIsEmailSent(true)
       setShowToast(true)
     }
-    catch(e) {
+    catch (e) {
       console.error(e)
       setIsEmailSent(false)
       setShowToast(true)
@@ -58,8 +58,8 @@ function Contact(props) {
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/contact" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://4llves.dev/contact" property="og:url" />
+        <meta content={`https://4llves.dev${image}`} property="og:image" />
       </Head>
 
       <Box>
