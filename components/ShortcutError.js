@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { ButtonPrimary } from '../components/ButtonPrimary'
 
 export default function ShortcutError() {
@@ -14,14 +14,14 @@ export default function ShortcutError() {
     if (isMobile) {
       return (
         <ButtonPrimary as="a" href="/">
-          Tap to go home →
+          Toque para ir para Home →
         </ButtonPrimary>
       )
     }
 
     return (
       <ButtonPrimary as="a" href="/">
-        Press <kbd>G</kbd> <kbd>H</kbd> to go home →
+        Pressione <kbd>G</kbd> <kbd>H</kbd> pra ir pra Home →
       </ButtonPrimary>
     )
   }

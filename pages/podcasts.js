@@ -2,7 +2,7 @@ import { AnimateSharedLayout } from 'framer-motion'
 import Head from 'next/head'
 import { ListGroup } from '../components/ListGroup'
 import ListItem from '../components/ListItem'
-import { appearances, bytetalk, zofe } from '../data/podcasts'
+import { voice } from '../data/podcasts'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
 
@@ -72,28 +72,14 @@ function Podcasts(props) {
       <AnimateSharedLayout>
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
-        <h2>Featured Podcasts</h2>
-        <ListGroup>{renderFeatured(appearances)}</ListGroup>
+        <h2>Podcasts</h2>
+        <ListGroup>{renderFeatured(voice)}</ListGroup>
 
-        <h2>ByteTalk</h2>
+        <h2>Voice</h2>
         <p>
-          A podcast where Jonni and I interview the most productive people in
-          tech.
+          Testando.
         </p>
-        <ListGroup>{renderEpisode(bytetalk)}</ListGroup>
-
-        <h2>Appearances</h2>
-        <p>
-          This is the list of all the podcasts that I gave an interview so far.
-        </p>
-        <ListGroup>{renderEpisode(appearances)}</ListGroup>
-
-        <h2>Zone Of Front-Enders</h2>
-        <p>
-          My first podcast, ZOFE, where Daniel and I talked about web
-          technologies.
-        </p>
-        <ListGroup>{renderEpisode(zofe)}</ListGroup>
+        <ListGroup>{renderEpisode(voice)}</ListGroup>
       </AnimateSharedLayout>
     </>
   )
