@@ -2,7 +2,6 @@ import { AnimateSharedLayout } from 'framer-motion'
 import Head from 'next/head'
 import React from 'react'
 import FeaturedProject from '../components/FeaturedProject'
-import { FeaturedProjects } from '../components/FeaturedProjects'
 import items from '../data/projects'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
@@ -10,7 +9,7 @@ import stripHtml from '../lib/strip-html'
 export async function getStaticProps() {
   const meta = {
     title: 'Projects // Alves Jhonata',
-    tagline: 'Work. Hobby. Open Source.',
+    tagline: 'Trabalhar. Passatempo. Código aberto.',
     image: '/static/images/projects-bw.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',
@@ -21,7 +20,7 @@ export async function getStaticProps() {
 
 function Projects(props) {
   const renderFeatured = () => {
-    const featured = ['Dracula PRO', 'Clipboard.js', 'Resend', 'React Email']
+    // const featured = ['Dracula PRO', 'Clipboard.js', 'Resend', 'React Email']
 
     return items
       .map(item => {
@@ -64,7 +63,7 @@ function Projects(props) {
   }
 
   const { title, image } = props
-  const description = `I'm obsessed with side projects and <strong>building in public</strong>. Here you can navigate to <strong>${getTotalProjects()} different</strong> websites, apps, and libraries I built. Some projects are still active, others have been discontinued.`
+  const description = `Aqui você pode navegar pelos projetos que eu criei.`
 
   return (
     <>
@@ -80,10 +79,10 @@ function Projects(props) {
       <AnimateSharedLayout>
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
-        <h2>Featured Projects</h2>
-        <FeaturedProjects>{renderFeatured()}</FeaturedProjects>
+        {/* <h2>Projetos em destaques</h2>
+        <FeaturedProjects>{renderFeatured()}</FeaturedProjects> */}
 
-        <h2>All Projects</h2>
+        <h2>Todos os Projetos</h2>
         {renderAll()}
       </AnimateSharedLayout>
     </>

@@ -1,11 +1,14 @@
 import { format, intervalToDuration, parseISO } from 'date-fns'
 import Lottie from 'lottie-react'
+import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import { ButtonPrimary } from '../components/ButtonPrimary'
 import Pronunciation from '../components/Pronunciation'
+import Toast from '../components/Toast'
 import items from '../data/about'
 import Base from '../layouts/Base'
+import stripHtml from '../lib/strip-html'
 import copyBioIcon from '../public/static/icons/copy-bio.json'
 import downloadIcon from '../public/static/icons/download.json'
 import { styled } from '../stitches.config'
@@ -180,13 +183,13 @@ function About(props) {
 
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>{title}</title>
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/about" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://4llves.dev/about" property="og:url" />
+        <meta content={`https://4llves.dev${image}`} property="og:image" />
       </Head>
 
       {renderIntro()}
@@ -203,7 +206,7 @@ function About(props) {
         isSuccess={true}
         showToast={showToast}
         setShowToast={setShowToast}
-      /> */}
+      />
     </>
   )
 }
