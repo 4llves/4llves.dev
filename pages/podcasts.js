@@ -2,14 +2,14 @@ import { AnimateSharedLayout } from 'framer-motion'
 import Head from 'next/head'
 import { ListGroup } from '../components/ListGroup'
 import ListItem from '../components/ListItem'
-import { voice } from '../data/podcasts'
+import { SpaceSquad } from '../data/podcasts'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
 
 export async function getStaticProps() {
   const meta = {
     title: 'Podcasts // Alves Jhonata',
-    tagline: 'Ideas. Thoughts. Opinions.',
+    tagline: 'Ideias. Pensamentos. Opiniões.',
     image: '/static/images/podcasts-bw.jpg',
     primaryColor: 'pink',
     secondaryColor: 'purple',
@@ -56,7 +56,8 @@ function Podcasts(props) {
   }
 
   const { title, image } = props
-  const description = `Audio is a powerful medium and a great way to <strong>debate ideas</strong>. Whenever possible I try to share my story as a guest or <strong>meet new people</strong> by hosting my own podcast called ByteTalk.`
+  const description = `O áudio é um meio poderoso e uma ótima maneira de <strong>debater ideias</strong>.`
+
 
   return (
     <>
@@ -73,13 +74,10 @@ function Podcasts(props) {
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
         <h2>Podcasts</h2>
-        <ListGroup>{renderFeatured(voice)}</ListGroup>
+        <ListGroup>{renderFeatured(SpaceSquad)}</ListGroup>
 
-        <h2>Voice</h2>
-        <p>
-          Testando.
-        </p>
-        <ListGroup>{renderEpisode(voice)}</ListGroup>
+        <h2>SpaceSquad</h2>
+        <ListGroup>{renderEpisode(SpaceSquad)}</ListGroup>
       </AnimateSharedLayout>
     </>
   )
