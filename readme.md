@@ -24,7 +24,7 @@ $ git clone https://github.com/zenorocha/zenorocha.com.git
 2. Then go to the project's folder:
 
 ```sh
-cd zenorocha.com
+cd 4llves.dev
 ```
 
 3. Install all dependencies:

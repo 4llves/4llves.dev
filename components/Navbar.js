@@ -1,18 +1,18 @@
-import { styled } from '../stitches.config'
-import { useState } from 'react'
+import { AnimateSharedLayout, motion } from 'framer-motion'
+import { useKBar } from 'kbar'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { motion, AnimateSharedLayout } from 'framer-motion'
-import { useKBar } from 'kbar'
+import { useState } from 'react'
+import { styled } from '../stitches.config'
 
 export default function Navbar() {
   const router = useRouter()
   const pages = [
     'About',
     // 'Articles',
-    // 'Projects',
+    'Projects',
     // 'Talks',
-    // 'Podcasts',
+    'Podcasts',
     // 'Investing',
     // 'Uses',
     // 'Reminder'
