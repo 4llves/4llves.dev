@@ -11,7 +11,7 @@ import stripHtml from '../lib/strip-html'
 export async function getStaticProps() {
   const meta = {
     title: 'Talks // Alves Jhonata',
-    tagline: 'Confs. Meetups. Events.',
+    tagline: 'Talks, Meetups, Eventos.',
     image: '/static/images/talks-bw.jpg',
     primaryColor: 'purple',
     secondaryColor: 'cyan',
@@ -63,7 +63,7 @@ function Talks(props) {
   }
 
   const { title, image } = props
-  const description = `I went my first conference in 2010 and felt in love with <strong>sharing knowledge</strong> publicly. Since then, I traveled to <strong>11 countries</strong> and gave more than <strong>${getTotalTalks()} talks</strong>. Want me to speak at your event? Hit me up!`
+  const description = `Aqui listo os eventos que participei e talks que palestrei ou irei palestrar 😉`
 
   return (
     <>
@@ -79,10 +79,10 @@ function Talks(props) {
       <AnimateSharedLayout>
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
-        <h2>Featured Talks</h2>
-        <Box css={{ margin: '10px 0 0 -20px' }}>{renderFeatured()}</Box>
+        {/* <h2>Todos os eventos</h2>
+        <Box css={{ margin: '10px 0 0 -20px' }}>{renderFeatured()}</Box> */}
 
-        <h2>All Talks</h2>
+        <h2>Todos os eventos</h2>
         {renderAll()}
       </AnimateSharedLayout>
     </>
@@ -101,10 +101,13 @@ function TalkItem(props) {
       </h3>
       <ul>
         <li>
-          <em>When:</em> {format(parseISO(talk.date), 'LLLL, d')}
+          <em>Quando:</em> {format(parseISO(talk.date), 'LLLL, d')}
         </li>
         <li>
-          <em>Where:</em> {talk.where}
+          <em>Local:</em> {talk.where}
+        </li>
+        <li>
+          <em>Tema:</em> {talk.theme}
         </li>
         {talk.attendees && (
           <li>

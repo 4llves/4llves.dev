@@ -56,7 +56,7 @@ function Podcasts(props) {
   }
 
   const { title, image } = props
-  const description = `O áudio é um meio poderoso e uma ótima maneira de <strong>debater ideias</strong>.`
+  const description = `O áudio é um meio poderoso e uma ótima maneira de conversar e construir novas ideias. Sempre que possível, tento compartilhar minha história para inspirar outros devs e mostrar como a comunidade mudou a minha vida.`
 
 
   return (
@@ -73,10 +73,10 @@ function Podcasts(props) {
       <AnimateSharedLayout>
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
-        <h2>Podcasts</h2>
-        <ListGroup>{renderFeatured(SpaceSquad)}</ListGroup>
+        {/* <h2>Podcasts</h2>
+        <ListGroup>{renderFeatured(SpaceSquad)}</ListGroup> */}
 
-        <h2>SpaceSquad</h2>
+        {/* <h2>SpaceSquad</h2> */}
         <ListGroup>{renderEpisode(SpaceSquad)}</ListGroup>
       </AnimateSharedLayout>
     </>

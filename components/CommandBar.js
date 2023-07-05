@@ -11,11 +11,11 @@ import Lottie from 'lottie-react'
 import { useRouter } from 'next/router'
 import { forwardRef, useRef, useState } from 'react'
 import aboutIcon from '../public/static/icons/about.json'
-import articlesIcon from '../public/static/icons/articles.json'
+
 import copyLinkIcon from '../public/static/icons/copy-link.json'
 import emailIcon from '../public/static/icons/email.json'
 import homeIcon from '../public/static/icons/home.json'
-import investingIcon from '../public/static/icons/investing.json'
+
 import podcastsIcon from '../public/static/icons/podcasts.json'
 import projectsIcon from '../public/static/icons/projects.json'
 import reminderIcon from '../public/static/icons/reminder.json'
@@ -31,12 +31,10 @@ export default function CommandBar(props) {
   const emailRef = useRef()
   const sourceRef = useRef()
   const homeRef = useRef()
-  const aboutRef = useRef()
-  const articlesRef = useRef()
+  const aboutRef = useRef()  
   const projectsRef = useRef()
   const talksRef = useRef()
-  const podcastsRef = useRef()
-  const investingRef = useRef()
+  const podcastsRef = useRef()  
   const usesRef = useRef()
   const reminderRef = useRef()
   const router = useRouter()
@@ -95,16 +93,7 @@ export default function CommandBar(props) {
       section: 'Go To',
       perform: () => router.push('/about'),
       icon: <Lottie lottieRef={aboutRef} style={iconSize} animationData={aboutIcon} loop={false} autoplay={false} />,
-    },
-    {
-      id: 'articles',
-      name: 'Articles',
-      shortcut: ['g', 'b'],
-      keywords: 'go-articles',
-      section: 'Go To',
-      perform: () => router.push('/articles'),
-      icon: <Lottie lottieRef={articlesRef} style={iconSize} animationData={articlesIcon} loop={false} autoplay={false} />,
-    },
+    },    
     {
       id: 'projects',
       name: 'Projects',
@@ -131,16 +120,7 @@ export default function CommandBar(props) {
       section: 'Go To',
       perform: () => router.push('/podcasts'),
       icon: <Lottie lottieRef={podcastsRef} style={iconSize} animationData={podcastsIcon} loop={false} autoplay={false} />,
-    },
-    {
-      id: 'investing',
-      name: 'Investing',
-      shortcut: ['g', 'i'],
-      keywords: 'go-investing',
-      section: 'Go To',
-      perform: () => router.push('/investing'),
-      icon: <Lottie lottieRef={investingRef} style={iconSize} animationData={investingIcon} loop={false} autoplay={false} />,
-    },
+    },    
     {
       id: 'uses',
       name: 'Uses',

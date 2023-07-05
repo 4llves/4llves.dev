@@ -9,7 +9,7 @@ import stripHtml from '../lib/strip-html'
 export async function getStaticProps() {
   const meta = {
     title: 'Projects // Alves Jhonata',
-    tagline: 'Trabalhar. Passatempo. Código aberto.',
+    tagline: 'Projetinhos.',
     image: '/static/images/projects-bw.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',

@@ -39,7 +39,7 @@ function About(props) {
       <Container>
         <Section>
           <Image
-            alt="Zeno"
+            alt="Alves"
             src="/static/images/4llves-bw.png"
             width="336"
             height="336"
@@ -64,9 +64,8 @@ function About(props) {
             nasci, cresci, e ainda moro em Goianésia do Pará - PA, Brasil.
           </Paragraph>
           <Paragraph>
-            <strong>Amo Dark Themes</strong> e ajudar a galera quando posso.
-            When I'm not working, I like running, watching movies, and{' '}
-            <strong>eating cheese</strong>.
+            Gosto de tocar <strong>violão</strong>, <strong>cajon</strong>, 
+            e ler <strong>mangás</strong>.
           </Paragraph>
         </Section>
       </Container>
@@ -80,10 +79,9 @@ function About(props) {
     return (
       <div>
         <p>
-          This is made for journalists, podcast hosts, and event organizers to
-          copy-and-paste.
+          Meu nome é Jhonata Barbalho Alves mas pode me chamar de Alves (ou bot).
         </p>
-        <blockquote>
+        {/* <blockquote>
           <p>{description}</p>
         </blockquote>
         <ButtonsContainer>
@@ -111,7 +109,7 @@ function About(props) {
             <Lottie lottieRef={downloadRef} style={iconStyle} animationData={downloadIcon} loop={false} autoplay={false} />
             Download Headshot
           </ButtonPrimary>
-        </ButtonsContainer>
+        </ButtonsContainer> */}
       </div>
     )
   }
@@ -193,7 +191,7 @@ function About(props) {
       <h2>Bio</h2>
       {renderBio()}
 
-      <h2>Career</h2>
+      <h2>Carreira</h2>
       {renderAll()}
 
       <Toast

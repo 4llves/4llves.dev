@@ -9,9 +9,12 @@ import { styled } from '../stitches.config'
 export async function getStaticProps() {
   return {
     props: {
+      tagline: 'Alves Jhonata',
       title: 'Alves Jhonata',
       description: 'Desvendando problemas e criando soluções através da tecnologia.',
       image: '/static/images/home-bw.jpg',
+      primaryColor: 'pink',
+      secondaryColor: 'purple',
     },
   }
 }
@@ -38,7 +41,7 @@ export default function Index(props) {
               <div>
                 <h1>{title}</h1>
                 <p>
-                  <strong>Tenho 26 anos, moro em Goianésia do Pará. Comecei aos 13 anos na área de manutenção de computadores e suporte, e aos 22 iniciei minha caminhada na área da programação.{' '}
+                  <strong>Desenvolvedor Front-end | RPA{' '}
                   </strong><br />
                   {description}
                 </p>

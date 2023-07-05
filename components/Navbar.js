@@ -11,8 +11,7 @@ export default function Navbar() {
     'Sobre',
     'Projetos',
     'Talks',
-    'Podcasts',
-    // 'Uses',
+    'Podcasts'    
   ]
   const [hovered, setHovered] = useState('')
   const { query } = useKBar()
