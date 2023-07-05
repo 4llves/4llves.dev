@@ -8,14 +8,11 @@ import { styled } from '../stitches.config'
 export default function Navbar() {
   const router = useRouter()
   const pages = [
-    'About',
-    // 'Articles',
-    'Projects',
-    // 'Talks',
+    'Sobre',
+    'Projetos',
+    'Talks',
     'Podcasts',
-    // 'Investing',
     // 'Uses',
-    // 'Reminder'
   ]
   const [hovered, setHovered] = useState('')
   const { query } = useKBar()
