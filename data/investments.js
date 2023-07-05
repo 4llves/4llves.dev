@@ -1,10 +1,10 @@
 const investments = [
-  // {
-  //   title: 'Mergent',
-  //   description: 'Providing schedulers in a reliable way.',
-  //   icon: 'mergent',
-  //   url: 'https://mergent.co',
-  // },  
+  {
+    title: 'undefined',
+    description: 'undefined',
+    icon: 'undefined',
+    url: '#',
+  },
 ]
 
 export default investments

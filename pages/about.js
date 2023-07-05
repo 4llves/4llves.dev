@@ -1,11 +1,13 @@
 import { format, intervalToDuration, parseISO } from 'date-fns'
 import Lottie from 'lottie-react'
+import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import { ButtonPrimary } from '../components/ButtonPrimary'
-import Pronunciation from '../components/Pronunciation'
+import Toast from '../components/Toast'
 import items from '../data/about'
 import Base from '../layouts/Base'
+import stripHtml from '../lib/strip-html'
 import copyBioIcon from '../public/static/icons/copy-bio.json'
 import downloadIcon from '../public/static/icons/download.json'
 import { styled } from '../stitches.config'
@@ -53,16 +55,12 @@ function About(props) {
               '@bp2': { marginTop: '-6px' },
             }}
           >
-            <strong>Hey, I'm Zeno Rocha</strong>
-            <Pronunciation />
-            I started as a software engineer back in 2009, working with Flash.
+            <strong>Aoba, Eu sou Jhonata Alves. </strong>
+            Comecei como Tecnico em Manutenção de Computadores em 2010.
           </Paragraph>
           <Paragraph>
-            I'm the <strong>Founder & CEO</strong> at
-            Resend. Before that, I was a VP of Developer Experience at WorkOS and CPO at Liferay Cloud. I'm originally
-            from Brazil and now living in{' '}
-            <strong>San Francisco, California</strong> with my amazing wife and
-            beautiful daughter.
+            Sou criador de robôs.
+            Nasci, cresci, e ainda Moro em Goianésia do Pará, Brasil.
           </Paragraph>
           <Paragraph>
             <strong>I love dark mode</strong>, open source, and side projects.
@@ -180,13 +178,13 @@ function About(props) {
 
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>{title}</title>
         <meta content={title} property="og:title" />
         <meta content={stripHtml(description)} name="description" />
         <meta content={stripHtml(description)} property="og:description" />
-        <meta content="https://zenorocha.com/about" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://4llves.dev/about" property="og:url" />
+        <meta content={`https://4llves.dev${image}`} property="og:image" />
       </Head>
 
       {renderIntro()}
@@ -203,7 +201,7 @@ function About(props) {
         isSuccess={true}
         showToast={showToast}
         setShowToast={setShowToast}
-      /> */}
+      />
     </>
   )
 }
