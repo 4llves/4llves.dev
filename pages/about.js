@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import { ButtonPrimary } from '../components/ButtonPrimary'
-import Pronunciation from '../components/Pronunciation'
 import Toast from '../components/Toast'
 import items from '../data/about'
 import Base from '../layouts/Base'
@@ -56,16 +55,12 @@ function About(props) {
               '@bp2': { marginTop: '-6px' },
             }}
           >
-            <strong>Hey, I'm Zeno Rocha</strong>
-            <Pronunciation />
-            I started as a software engineer back in 2009, working with Flash.
+            <strong>Aoba, Eu sou Jhonata Alves. </strong>
+            Comecei como Tecnico em Manutenção de Computadores em 2010.
           </Paragraph>
           <Paragraph>
-            I'm the <strong>Founder & CEO</strong> at
-            Resend. Before that, I was a VP of Developer Experience at WorkOS and CPO at Liferay Cloud. I'm originally
-            from Brazil and now living in{' '}
-            <strong>San Francisco, California</strong> with my amazing wife and
-            beautiful daughter.
+            Sou criador de robôs.
+            Nasci, cresci, e ainda Moro em Goianésia do Pará, Brasil.
           </Paragraph>
           <Paragraph>
             <strong>I love dark mode</strong>, open source, and side projects.
