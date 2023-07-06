@@ -12,7 +12,7 @@ export async function getStaticProps() {
       tagline: 'Alves Jhonata',
       title: 'Alves Jhonata',
       description: 'Desvendando problemas e criando soluções através da tecnologia.',
-      image: '/static/images/home-bw.jpg',
+      image: '/static/images/4llves-bw.png',
       primaryColor: 'pink',
       secondaryColor: 'purple',
     },
@@ -28,7 +28,7 @@ export default function Index(props) {
         <title>{title}</title>
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
-        <meta content={description} property="og:description" />
+        <meta content={description} property=":ogdescription" />
         <meta content="https://4llves.dev/" property="og:url" />
         <meta content={`https://4llves.dev${image}`} property="og:image" />
       </Head>
