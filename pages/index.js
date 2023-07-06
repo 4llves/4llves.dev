@@ -28,7 +28,7 @@ export default function Index(props) {
         <title>{title}</title>
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
-        <meta content={description} property=":ogdescription" />
+        <meta content={description} property="og:description" />
         <meta content="https://4llves.dev/" property="og:url" />
         <meta content={`https://4llves.dev${image}`} property="og:image" />
       </Head>
