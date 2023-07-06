@@ -12,7 +12,7 @@ export async function getStaticProps() {
       tagline: 'Alves Jhonata',
       title: 'Alves Jhonata',
       description: 'Desvendando problemas e criando soluções através da tecnologia.',
-      image: '/static/images/home-bw.jpg',
+      image: '/static/images/4llves-bw.png',
       primaryColor: 'pink',
       secondaryColor: 'purple',
     },
