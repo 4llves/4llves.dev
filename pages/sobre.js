@@ -14,7 +14,7 @@ import { styled } from '../stitches.config'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Sobre // Alves Jhonata',
+    title: 'Sobre // 4llves',
     description:
       "Sou Jhonata Alves, tenho 26 anos, moro em Goianésia do Pará. Comecei aos 13 anos na área de manutenção de computadores e suporte, e aos 22 iniciei minha caminhada na área da programação.",
     tagline: 'Sobre mim.',

@@ -11,7 +11,7 @@ export default function Footer() {
     {
       title: 'Twitter',
       url: 'https://twitter.com/4llves',
-      icon: 'ri-twitter-line',
+      icon: 'ri-twitter-fill',
     },
     {
       title: 'GitHub',
@@ -28,6 +28,11 @@ export default function Footer() {
       url: 'https://instagram.com/4llves_',
       icon: 'ri-instagram-line',
     },
+    // {
+    //   title: 'Twitch',
+    //   url: 'https://www.twitch.tv/4llves',
+    //   icon: 'ri-instagram-line',
+    // },
   ]
 
   const renderAnchor = (link, index) => {
@@ -40,8 +45,10 @@ export default function Footer() {
 
     return <Link key={index} href={link.url} passHref>
       <Anchor>
-        <Title>{link.title}</Title>
-        <Icon className={link.icon} />
+        <div className='twitter'>
+          <Title>{link.title}</Title>
+          <Icon className={link.icon} />
+        </div>
       </Anchor>
     </Link>
   }
@@ -78,7 +85,11 @@ const Anchor = styled('a', {
   marginLeft: '20px',
   textDecoration: 'none',
   textTransform: 'lowercase',
-  transition: 'color $duration ease-in-out',
+  transition: 'color $duration ease-in-out',  
+  '&:hover, &:focus': {
+    color: '$primary',
+    opacity: 1,
+  },  
   '&:hover, &:focus': {
     color: '$primary',
     opacity: 1,
