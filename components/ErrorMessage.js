@@ -2,11 +2,11 @@ import { Box } from './Box'
 import ShortcutError from './ShortcutError'
 
 export default function ErrorMessage({ code }) {
-  let title = 'quinhentos'
+  let title = '500'
   let description = "Algo de errado não está certo. 😶‍🌫️"
 
   if (code === 404) {
-    title = 'quatrocentos e quatro'
+    title = '404'
     description = "Esta página não existe! Ou existe em algum multiverso.😛"
   }
 

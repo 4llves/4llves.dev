@@ -8,7 +8,7 @@ import stripHtml from '../lib/strip-html'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Podcasts // Alves Jhonata',
+    title: 'Podcasts // 4llves',
     tagline: 'Ideias. Pensamentos. Opiniões.',
     image: '/static/images/podcasts-bw.jpg',
     primaryColor: 'pink',
