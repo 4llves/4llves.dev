@@ -45,10 +45,8 @@ export default function Footer() {
 
     return <Link key={index} href={link.url} passHref>
       <Anchor>
-        <div className='twitter'>
-          <Title>{link.title}</Title>
-          <Icon className={link.icon} />
-        </div>
+        <Title>{link.title}</Title>
+        <Icon className={link.icon} />
       </Anchor>
     </Link>
   }
@@ -85,11 +83,11 @@ const Anchor = styled('a', {
   marginLeft: '20px',
   textDecoration: 'none',
   textTransform: 'lowercase',
-  transition: 'color $duration ease-in-out',  
+  transition: 'color $duration ease-in-out',
   '&:hover, &:focus': {
     color: '$primary',
     opacity: 1,
-  },  
+  },
   '&:hover, &:focus': {
     color: '$primary',
     opacity: 1,
