@@ -14,6 +14,14 @@ const items = [
     location: 'Goianésia do Pará, Pará',
   },
   {
+    jobTitle: 'Recepcionista',
+    company: 'CERTEC',
+    companyUrl: '#',
+    startDate: '2017-05-02',
+    endDate: '2018-05-31',
+    location: 'Goianésia do Pará, Pará',
+  },
+  {
     jobTitle: 'Manutenção de Computadores',
     company: 'Freelancer',
     companyUrl: '#',
