@@ -1,15 +1,11 @@
 import { format, intervalToDuration, parseISO } from 'date-fns'
-import Lottie from 'lottie-react'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
-import { ButtonPrimary } from '../components/ButtonPrimary'
 import Toast from '../components/Toast'
 import items from '../data/about'
 import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
-import copyBioIcon from '../public/static/icons/copy-bio.json'
-import downloadIcon from '../public/static/icons/download.json'
 import { styled } from '../stitches.config'
 
 export async function getStaticProps() {
@@ -61,10 +57,10 @@ function About(props) {
           <Paragraph>
             Sou criador de robôs.
             Tenho 26 anos,
-            nasci, cresci, e ainda moro em Goianésia do Pará - PA, Brasil.
+            nasci, cresci e moro em Goianésia do Pará - PA, Brasil.
           </Paragraph>
           <Paragraph>
-            Gosto de tocar <strong>violão</strong>, <strong>cajon</strong>, 
+            Gosto de tocar <strong>violão</strong>, <strong>cajon</strong>,
             e ler <strong>mangás</strong>.
           </Paragraph>
         </Section>
