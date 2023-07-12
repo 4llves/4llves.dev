@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { styled } from '../stitches.config'
+import rocketIcon from '../public/static/svg/rocket.svg'
 
 export default function Footer() {
   const links = [
@@ -28,11 +29,11 @@ export default function Footer() {
       url: 'https://instagram.com/4llves_',
       icon: 'ri-instagram-line',
     },
-    // {
-    //   title: 'Twitch',
-    //   url: 'https://www.twitch.tv/4llves',
-    //   icon: 'ri-instagram-line',
-    // },
+    {
+      title: 'Rocketseat',
+      url: 'https://app.rocketseat.com.br/me/4llves',
+      // icon: rocketIcon,
+    },
   ]
 
   const renderAnchor = (link, index) => {
