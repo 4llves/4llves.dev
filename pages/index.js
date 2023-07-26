@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import { PostContainer, PostContent, PostMain } from '../components/Post'
 import ShortcutHome from '../components/ShortcutHome'
+import { Title } from '../components/Title'
 import { Wrapper } from '../components/Wrapper'
 import { styled } from '../stitches.config'
 
@@ -20,7 +21,7 @@ export async function getStaticProps() {
 }
 
 export default function Index(props) {
-  const { title, description, image } = props
+  const { title, description, image, ...rest } = props
 
   return (
     <Wrapper>
@@ -39,7 +40,7 @@ export default function Index(props) {
           <PostContainer>
             <div style={{ display: 'flex' }}>
               <div>
-                <h1>{title}</h1>
+              <Title title={title} {...rest} />
                 <p>
                   <strong>Desenvolvedor Front-end | RPA{' '}
                   </strong><br />
