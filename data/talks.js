@@ -5,7 +5,7 @@ const items = [
     talks: [
       {
         title: 'Campus Party Brasil 14',
-        // theme: 'Perdi tudo e virei dev RPA',
+        // theme: '',
         // url: '#',
         date: '2023-11-15',
         where: 'São Paulo',
@@ -22,6 +22,13 @@ const items = [
         url: 'https://www.linkedin.com/events/meetup-osdesafiosnodesenvolvime7077348700242518017/about/',
         date: '2023-07-20',
         where: 'LinkedIn',
+      },
+      {
+        title: 'Campus Party Brasil 15',
+        // theme: '',
+        // url: '#',
+        date: '2023-07-25',
+        where: 'São Paulo',
       },
     ]
   },

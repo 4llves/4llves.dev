@@ -101,7 +101,7 @@ function TalkItem(props) {
       </h3>
       <ul>
         <li>
-          <em>Quando:</em> {format(parseISO(talk.date), 'LLLL, d')}
+          <em>Quando:</em> {format(parseISO(talk.date), "d ' de ' LLLL")}
         </li>
         <li>
           <em>Local:</em> {talk.where}
