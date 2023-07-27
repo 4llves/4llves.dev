@@ -10,7 +10,7 @@ const GradientTitle = styled('h1', {
   WebkitBoxDecorationBreak: 'clone',
 })
 
-export const Title = ({ primaryColor = 'primary', secondaryColor = 'secondary', title }) => {
+export const Title = ({ primaryColor = 'primary', secondaryColor = 'secondary', title, ...rest }) => {
   return <GradientTitle
     css={{
       backgroundImage: `linear-gradient(
@@ -19,6 +19,7 @@ export const Title = ({ primaryColor = 'primary', secondaryColor = 'secondary', 
     $${secondaryColor} 100%
   );`,
     }}
+    {...rest}
   >
     {title}
   </GradientTitle>
