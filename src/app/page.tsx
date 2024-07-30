@@ -22,13 +22,13 @@ export default function Home() {
           </p>
         </div>
 
-        <p className={`${quantico.className} text- font-bold`}>
+        {/* <p className={`${quantico.className} text- font-bold`}>
           Pressione{' '}
           <button className="bg-slate-100 text-blue-700 px-1 rounded-sm">
             Ctrl + K
           </button>{' '}
           para Iniciar
-        </p>
+        </p> */}
       </section>
       {/* <section className="">
         <Image

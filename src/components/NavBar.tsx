@@ -1,27 +1,25 @@
 'use client'
 import { routesLinks } from '@/enums/route-enums'
-import { Quantico } from 'next/font/google'
+// import { Quantico } from 'next/font/google'
 import Link from 'next/link'
-
-import world from '../assets/world.json'
 
 import {
   NavigationMenu,
   NavigationMenuItem,
 } from '@/components/ui/navigation-menu'
-import { Lordicon } from './Lordicon'
 
-const quantico = Quantico({
-  subsets: ['latin'],
-  weight: '400',
-})
+// const quantico = Quantico({
+//   subsets: ['latin'],
+//   weight: '400',
+// })
 
 const routesLinksArray = Object.values(routesLinks)
 
 export function NavBar() {
   return (
     <div
-      className={`${quantico.className} flex mx-14 items-center justify-between space-x-16 m-7 box-border`}
+      className={`flex mx-2 md:mx-14 items-center justify-between space-x-16 m-7 box-border`}
+      // className={`${quantico.className} flex mx-14 items-center justify-between space-x-16 m-7 box-border`}
     >
       <Link href={routesLinks.home} className="flex items-center h-5 w-4">
         <p className="text-3xl font-bold">4</p>
@@ -48,12 +46,6 @@ export function NavBar() {
           </NavigationMenuItem>
         ))}
       </NavigationMenu>
-
-      <div className="">
-        <Link href={routesLinks.home}>
-          <Lordicon icon={world} size={32} />
-        </Link>
-      </div>
     </div>
   )
 }
