@@ -1,5 +1,5 @@
 import { Footer } from '@/components/Footer'
-import { NavBar } from '@/components/NavBar'
+// import { NavBar } from '@/components/NavBar'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${inter.className} h-screen flex flex-col`}>
-        <NavBar />
+        {/* <NavBar /> */}
         <Hamburguer />
         <main className="flex flex-1 items-center justify-center">
           {children}

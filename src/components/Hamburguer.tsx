@@ -1,3 +1,4 @@
+'use client'
 import clsx from 'clsx'
 import { useState } from 'react'
 
@@ -13,7 +14,7 @@ export function Hamburguer() {
     <div>
       <header
         className={clsx(
-          'bg-purple-800 text-white p-8 flex flex-col md:flex-row justify-around',
+          'bg-black text-white p-8 flex flex-col md:flex-row gap-6',
           {
             'h-screen': mobileMenuOpen,
           },

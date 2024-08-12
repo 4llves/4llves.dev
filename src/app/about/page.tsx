@@ -2,20 +2,28 @@
 
 import Image from 'next/image'
 
-import Headers from '@/components/Headers'
 import Alvesimg from '../../assets/4llvescontrastr.jpg'
 
 export default function About() {
   return (
-    <div className="px-5">
-      <div className="flex gap-6 items-center mb-10">
-        <Headers name="Sobre mim" size={['7xl']} />
+    <div className="flex flex-col items-center justify-center px-0 md:px-5">
+      <div className="flex items-center md:items-start justify-center md:justify-start">
+        <p
+          className={
+            'text-2xl py-10 md:py-0 font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient'
+          }
+          // className={
+          //   'text-2xl md:text-sm font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient'
+          // }
+        >
+          Sobre mim
+        </p>
       </div>
 
-      <div className="flex gap-20">
-        <section className="">
+      <main className="">
+        <section className="w-60 h-60">
           <Image
-            className="shadow-person rounded-lg"
+            className="shadow-person rounded-sm"
             src={Alvesimg}
             alt="imagem de Alves"
             width={360}
@@ -23,7 +31,7 @@ export default function About() {
         </section>
 
         <section className="max-w-xl">
-          <p className="text-justify text-2xl leading-relaxed">
+          <p className="text-justify text-sm md:text-2xl leading-relaxed">
             <strong>Faaala galerinhaaaaaa...</strong> Tudo bem por ai? 😁 <br />
             <br />
             Sou <strong>Jhonata Alves</strong> um jovem do interior do Pará que
@@ -33,7 +41,7 @@ export default function About() {
             PA, Brasil. Gosto de tocar violão, cajon e ler mangás.
           </p>
         </section>
-      </div>
+      </main>
     </div>
   )
 }
