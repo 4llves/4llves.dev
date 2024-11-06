@@ -1,37 +1,39 @@
+/* eslint-disable camelcase */
 'use client'
 import clsx from 'clsx'
 import { useState } from 'react'
-// import Logo from '../assets/sliceLogo.svg'
-// import Image from 'next/image'
-import { Quantico } from 'next/font/google'
+import { Chakra_Petch } from 'next/font/google'
+import { LinkDev } from './link-dev'
 
-const quantico = Quantico({
+const chakraPetch = Chakra_Petch({
   subsets: ['latin'],
-  weight: '700',
+  weight: '400',
 })
 
 export function Hamburguer() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const menuItemClassName = clsx('md:block md:text-xl text-xl group', {
-    visible: mobileMenuOpen,
-    hidden: !mobileMenuOpen,
-  })
+  const menuItemClassName = clsx(
+    'md:block md:text-base text-xl group cursor-pointer',
+    {
+      visible: mobileMenuOpen,
+      hidden: !mobileMenuOpen,
+    },
+  )
 
   return (
-    <div>
+    <div className="">
       <header
         className={clsx(
-          `bg-black md:flex md:items-center md:justify-center text-green-titles p-5 flex flex-col md:flex-row gap-10 cursor-pointer ${quantico.className}`,
+          ` md:w-[720px] md:m-auto md:flex md:items-center md:justify-between text-green-titles p-8 md:p-5 flex flex-col md:flex-row gap-10 ${chakraPetch.className}`,
           {
             'h-screen': mobileMenuOpen,
           },
         )}
       >
         <a href="/" className={menuItemClassName}>
-          {/* <Image src={Logo} alt="" width={30} height={30}></Image> */}
           <svg
-            className="fill-white hover:fill-green-titles transition duration-300 ease-in-out"
+            className="fill-white hover:fill-orange-500 transition duration-300 ease-in-out"
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
             width="25pt"
@@ -118,6 +120,7 @@ export function Hamburguer() {
             /&gt;
           </strong>
         </a>
+
         <a href="/about" className={menuItemClassName}>
           <strong className="text-green-titles md:group-hover:text-green-titles md:text-transparent">
             &lt;{' '}
@@ -128,6 +131,7 @@ export function Hamburguer() {
             /&gt;
           </strong>
         </a>
+
         <a href="/project" className={menuItemClassName}>
           <strong className="text-green-titles md:group-hover:text-green-titles md:text-transparent">
             &lt;{' '}
