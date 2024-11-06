@@ -1,87 +1,36 @@
-# zenorocha.com
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-> My personal website <3
+## Getting Started
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzenorocha%2Fzenorocha.com)
+First, run the development server:
 
-## Technology stack
-
-- **Styling:** [Stitches](https://stitches.dev/)
-- **Content:** [Markdown](https://daringfireball.net/projects/markdown/)
-- **Back-end:** [Next.js](https://nextjs.org/)
-- **Front-end:** [React](https://reactjs.org/)
-- **Animation:** [Framer](https://www.framer.com/docs/animation/)
-- **Deployment:** [Vercel](https://vercel.com/)
-
-## Running locally
-
-1. Clone this repo:
-
-```sh
-$ git clone https://github.com/zenorocha/zenorocha.com.git
-```
-
-2. Then go to the project's folder:
-
-```sh
-cd 4llves.dev
-```
-
-3. Install all dependencies:
-
-```sh
-npm install
-```
-
-4. Run locally:
-
-```sh
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## File structure
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The basic file structure for the project is organized in the following way:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```
-.
-|-- articles
-|-- components
-|-- data
-|-- layouts
-|-- lib
-|-- pages
-`-- public
-```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-### [articles](https://github.com/zenorocha/zenorocha.com/tree/master/articles)
+## Learn More
 
-Here you'll find a list of markdown files for each post.
+To learn more about Next.js, take a look at the following resources:
 
-### [components](https://github.com/zenorocha/zenorocha.com/tree/master/components)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Here you'll find reusable blocks of React components.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### [data](https://github.com/zenorocha/zenorocha.com/tree/master/data)
+## Deploy on Vercel
 
-Here you'll find JSON files that populates each section.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### [layouts](https://github.com/zenorocha/zenorocha.com/tree/master/layouts)
-
-Here you'll find default templates for different pages.
-
-### [lib](https://github.com/zenorocha/zenorocha.com/tree/master/lib)
-
-Here you'll find a set of utilities.
-
-### [pages](https://github.com/zenorocha/zenorocha.com/tree/master/pages)
-
-Here you'll find all the main pages of the site.
-
-### [public](https://github.com/zenorocha/zenorocha.com/blob/master/public)
-
-Here you'll find all the CSS, images, and font files.
-
-## License
-
-[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
