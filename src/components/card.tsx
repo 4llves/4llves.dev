@@ -28,7 +28,7 @@ export function Card() {
               "transition-all duration-500"
             )}
           >
-            <div className="text relative z-50 w-xs rounded-b-md backdrop-filter backdrop-blur-md bg-black bg-opacity-10 rounded-xl py-2 px-4">
+            <div className="text relative z-20 w-xs rounded-b-md backdrop-filter backdrop-blur-md bg-black bg-opacity-10 rounded-xl py-2 px-4">
               <h1 className="text-center font-bold text-xl md:text-3xl text-gray-50 relative ">
                 Psicóloga Monique Brito
               </h1>
@@ -52,7 +52,7 @@ export function Card() {
               "transition-all duration-500"
             )}
           >
-            <div className="text relative z-50 w-xs rounded-b-md backdrop-filter backdrop-blur-md bg-black bg-opacity-10 rounded-xl py-2 px-4">
+            <div className="text relative z-20 w-xs rounded-b-md backdrop-filter backdrop-blur-md bg-black bg-opacity-10 rounded-xl py-2 px-4">
               <h1 className="text-center font-bold text-xl md:text-3xl text-gray-50 relative ">
                 Personal Gabriel Porto
               </h1>
