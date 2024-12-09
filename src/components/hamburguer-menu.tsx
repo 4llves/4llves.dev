@@ -36,7 +36,7 @@ export function HamburguerMenu() {
           }
         )}
       >
-        <Link href="/" className={menuItemClassName}>
+        <Link href="/" className={menuItemClassName} onClick={handleLinkClick}>
           {mobileMenuOpen ? (
             <div className="flex items-center gap-4">
               <AllvesLogo /> 4llves dev
