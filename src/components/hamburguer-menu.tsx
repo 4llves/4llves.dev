@@ -27,7 +27,7 @@ export function HamburguerMenu() {
   };
 
   return (
-    <div className="sticky top-0 left-0 right-0 z-50 w-full flex px-4 md:px-0 py-3 mx-auto bg-[#141414] backdrop-filter backdrop-blur-md bg-opacity-10">
+    <div className="sticky top-0 left-0 right-0 z-50 w-full flex px-4 md:px-0 py-3 mx-auto bg-[#141414] backdrop-filter backdrop-blur-md bg-opacity-10 overflow-y-hidden">
       <header
         className={clsx(
           `md:max-w-5xl w-full md:m-auto md:flex md:items-center md:justify-between text-primary p-8 md:p-5 flex flex-col md:flex-row gap-10 ${chakraPetch.className}`,

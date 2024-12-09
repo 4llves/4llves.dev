@@ -85,7 +85,7 @@ export default function About() {
 
             <Separator color="primary" />
 
-            <div className="w-full grid grid-cols-2 md:grid-cols-2 md:grid-cols-3 gap-2 justify-evenly items-center">
+            <div className="w-full grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-evenly items-center">
               <div className="flex md:text-lg col-span-2 gap-2 justify-center items-center p-2 border border-primary rounded-lg w-full">
                 <MapPin size={24} /> Goianésia do Pará
               </div>
