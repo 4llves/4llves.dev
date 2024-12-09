@@ -18,7 +18,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="absolute bottom-14 left-14 px-4">
+        <div className="absolute bottom-0 md:bottom-14 left-0 md:left-14 px-4">
           <Image
             className="opacity-50"
             src="/christmas-one.svg"

@@ -12,8 +12,12 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'psico': "url('/lppsicomonique.png')",
-        'gporto': "url('/lpgporto.png')",
+        'psicologamonique-img': "url('/psicologamonique.png')",
+        'psicologamonique-gif':
+          "url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm5zMzkwNWkxc2Zqc3huYTg1a3Z6bm1xZmQyaG5zeGV3NHd2OTg3MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QQSNmsmuMi8wnzM8uI/giphy.gif')",
+        'gporto-img': "url('/lpgporto.png')",
+        'gporto-gif':
+          "url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDRocGtqZnlzdXRxMHAzajdnYWFybTQzZWhtNDVxOTVjYng3anl5aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/spFknnFyEACXr2R16a/giphy.gif')",
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -73,20 +77,14 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       animation: {
+        move: 'move 5s linear infinite',
         shine: 'shine var(--duration) infinite linear',
         'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
-        snow: 'snow 6s linear infinite, wind 10s ease-in-out infinite',
       },
       keyframes: {
-        snow: {
-          '100%': {
-            'top': '100%',
-          },
-        },
-        wind: {
-          '50%': {
-            transform: 'translateX(120px)',
-          },
+        move: {
+          '0%': { transform: 'translateX(-200px)' },
+          '100%': { transform: 'translateX(200px)' },
         },
         shine: {
           '0%': {

@@ -58,7 +58,7 @@ const career: CareerProps[] = [
 export default function About() {
   return (
     <div className="md:max-w-5xl w-full flex items-center justify-center mx-auto h-full min-h-screen py-8 px-4 md:px-2 pb-20 gap-16 md:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 h-max row-start-2 items-center md:items-start">
+      <main className="flex flex-col gap-8 h-max row-start-2 items-center md:items-start px-4">
         <h2 className="gap-4 text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.sky.100),theme(colors.sky.200),theme(colors.sky.400),theme(colors.sky.500),theme(colors.sky.100))] bg-[length:200%_auto] animate-gradient">
           Sobre
         </h2>

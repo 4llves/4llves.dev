@@ -22,6 +22,10 @@ export function HamburguerMenu() {
     }
   );
 
+  const handleLinkClick = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <div className="sticky top-0 left-0 right-0 z-50 w-full flex px-4 md:px-0 py-3 mx-auto bg-[#141414] backdrop-filter backdrop-blur-md bg-opacity-10">
       <header
@@ -41,7 +45,8 @@ export function HamburguerMenu() {
             <AllvesLogo />
           )}
         </Link>
-        <Link href="/" className={menuItemClassName}>
+
+        <Link href="/" className={menuItemClassName} onClick={handleLinkClick}>
           <strong className="text-primary md:group-hover:text-primary md:text-transparent transition duration-600 ease-in-out">
             &lt;{" "}
           </strong>
@@ -52,7 +57,11 @@ export function HamburguerMenu() {
           </strong>
         </Link>
 
-        <Link href="/about" className={menuItemClassName}>
+        <Link
+          href="/about"
+          className={menuItemClassName}
+          onClick={handleLinkClick}
+        >
           <strong className="text-primary md:group-hover:text-primary md:text-transparent transition duration-600 ease-in-out">
             &lt;{" "}
           </strong>
@@ -63,7 +72,11 @@ export function HamburguerMenu() {
           </strong>
         </Link>
 
-        <Link href="/projects" className={menuItemClassName}>
+        <Link
+          href="/projects"
+          className={menuItemClassName}
+          onClick={handleLinkClick}
+        >
           <strong className="text-primary md:group-hover:text-primary md:text-transparent transition duration-600 ease-in-out">
             &lt;{" "}
           </strong>
@@ -74,7 +87,11 @@ export function HamburguerMenu() {
           </strong>
         </Link>
 
-        <Link href="/talks" className={menuItemClassName}>
+        <Link
+          href="/talks"
+          className={menuItemClassName}
+          onClick={handleLinkClick}
+        >
           <strong className="text-primary md:group-hover:text-primary md:text-transparent transition duration-600 ease-in-out">
             &lt;{" "}
           </strong>
