@@ -22,23 +22,10 @@ export function HamburguerMenu() {
     }
   );
 
-  const toggleOverflow = () => {
-    const bodyy = document.querySelector("body");
-
-    if (mobileMenuOpen) {
-      bodyy?.setAttribute("style", "overflow:unset");
-    } else {
-      bodyy?.setAttribute("style", "overflow:hidden");
-    }
-  };
-
   const handleLinkClick = () => {
     if (mobileMenuOpen) {
       setMobileMenuOpen(false);
-      toggleOverflow();
     }
-
-    return;
   };
 
   return (
@@ -122,7 +109,6 @@ export function HamburguerMenu() {
           className="md:hidden absolute right-4 top-6"
           onClick={() => {
             setMobileMenuOpen((currentValue) => !currentValue);
-            toggleOverflow();
           }}
         >
           <div

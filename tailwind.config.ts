@@ -82,6 +82,11 @@ export default {
         'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
       },
       keyframes: {
+        snow: {
+          '0%': { transform: 'translate(0,0)', opacity: '0' },
+          '50%': { opacity: '1' },
+          '100%': { opacity: '0', transform: 'translate(100px,50vh)' },
+        },
         move: {
           '0%': { transform: 'translateX(-200px)' },
           '100%': { transform: 'translateX(200px)' },
@@ -117,7 +122,28 @@ export default {
     animation: {
       gradient: 'gradient 8s linear infinite',
       border: 'border 4s linear infinite',
+      'snow-fall': 'snow 4s ease-in-out infinite',
     },
   },
-  plugins: [require('tailwindcss-animate'), nextui()],
+  plugins: [
+    require('tailwindcss-animate'),
+    nextui(),
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+    ({ addUtilities }: { addUtilities: any }) => {
+      addUtilities({
+        '.bg-snow-globe-mobile': {
+          'background-image': "url('/snow-globe.gif')",
+          'background-position': '10% 95%',
+          'background-repeat': 'no-repeat',
+          'background-size': '35%',
+        },
+        '.bg-snow-globe': {
+          'background-image': "url('/snow-globe.gif')",
+          'background-position': '10% 95%',
+          'background-repeat': 'no-repeat',
+          'background-size': '15%',
+        },
+      })
+    },
+  ],
 } satisfies Config
