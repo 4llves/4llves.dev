@@ -1,9 +1,8 @@
+import { Navigation } from "@/components/navigation";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { HamburguerMenu } from "@/components/hamburguer-menu";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Snowflake } from "@/components/_snowflake/snow-flake";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,10 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
       >
-        <Snowflake />
         <ScrollArea className="h-dvh">
-          <HamburguerMenu />
-          {children}
+          <Navigation />
+          <div className="mt-20">{children}</div>
         </ScrollArea>
       </body>
     </html>

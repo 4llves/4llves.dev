@@ -22,7 +22,7 @@ const career: CareerProps[] = [
     office: "Dev Frontend",
     enterprise: "Autonomo",
     city: "Goianésia do Pará - PA",
-    start: "Jul 2023",
+    start: "Jul 2024",
     end: "Present",
   },
   {
@@ -37,21 +37,28 @@ const career: CareerProps[] = [
     enterprise: "Prefeitura Municipal de Goianésia do Pará",
     city: "Goianésia do Pará - PA",
     start: "Feb 2019",
-    end: "Present",
+    end: "Dec 2024",
+  },
+  {
+    office: "Assistente Administrativo",
+    enterprise: "CERTEC",
+    city: "Goianésia do Pará - PA",
+    start: "May 2017",
+    end: "May 2018",
   },
   {
     office: "Manutenção de Computadores",
     enterprise: "Autonomo",
     city: "Goianésia do Pará - PA",
     start: "Jan 2010",
-    end: "Dec 2018",
+    end: "Present",
   },
   {
-    office: "Recepcionista",
-    enterprise: "CERTEC",
+    office: "Instrutor de Informática",
+    enterprise: "Hábil Informática",
     city: "Goianésia do Pará - PA",
-    start: "May 2017",
-    end: "May 2018",
+    start: "Oct 2009",
+    end: "Dec 2010",
   },
 ];
 
