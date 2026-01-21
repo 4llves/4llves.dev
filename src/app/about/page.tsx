@@ -19,6 +19,20 @@ type CareerProps = {
 
 const career: CareerProps[] = [
   {
+    office: "CEO - 4bits Norte Tecnologia",
+    enterprise: "4bits Norte Tecnologia",
+    city: "Goianésia do Pará - PA",
+    start: "Set 2025",
+    end: "Present",
+  },
+  {
+    office: "Consultor de Licitação",
+    enterprise: "Autonomo",
+    city: "Goianésia do Pará - PA",
+    start: "Jan 2025",
+    end: "Present",
+  },
+  {
     office: "Dev Frontend",
     enterprise: "Autonomo",
     city: "Goianésia do Pará - PA",
@@ -98,7 +112,7 @@ export default function About() {
               </div>
 
               <div className="flex md:text-lg col-span-1 gap-2 justify-center items-center p-2 border border-primary rounded-lg w-full">
-                <Baby size={24} /> 27 Anos
+                <Baby size={24} /> 29 Anos
               </div>
 
               <div className="flex md:text-lg col-span-1 gap-2 justify-center items-center p-2 border border-primary rounded-lg w-full">
